@@ -10,6 +10,10 @@
     isHome: {{ is_home() }},
     isPost: {{ is_post() }},
     isPage: {{ is_page() }},
-    isArchive: {{ is_archive() }}
+    isArchive: {{ is_archive() }},
+    isLocalhost: (() => {
+      var localhost = /^http:\/\/(localhost|127.0.0.1|0.0.0.0)/;
+      return localhost.test(document.URL);
+    })()
   };
 </script>

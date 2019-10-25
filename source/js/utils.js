@@ -311,7 +311,6 @@ NexT.utils = {
   hasMobileUA: function() {
     var ua = navigator.userAgent;
     var pa = /iPad|iPhone|Android|Opera Mini|BlackBerry|webOS|UCWEB|Blazer|PSP|IEMobile|Symbian/g;
-
     return pa.test(ua);
   },
 
